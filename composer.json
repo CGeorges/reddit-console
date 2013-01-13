@@ -3,7 +3,7 @@
   "description": "Provides a CLI interface to Reddit",
   "keywords": [
     "reddit",
-    "cli",
+    "cli"
   ],
 
   "license": "GPLv2",
