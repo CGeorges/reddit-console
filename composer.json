@@ -1,5 +1,28 @@
 {
+  "name": "h2s/reddit-console",
+  "description": "Provides a CLI interface to Reddit",
+  "keywords": [
+    "reddit",
+    "cli",
+  ],
+
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Henry Smith",
+      "email": "henry@henrysmith.org",
+      "homepage": "http://henrysmith.org"
+    }
+  ],
+
+  "autoload": {
+    "psr-0": {
+      "RedditConsole\\": "src/"
+    }
+  },
+
   "require": {
+    "php": ">=5.3.0",
     "h2s/reddit-api-client": "dev-master",
     "symfony/console": "2.1.*@dev"
   }
