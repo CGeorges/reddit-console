@@ -7,6 +7,7 @@ so, here's how to use the application itself:
 
     $ git clone git@github.com:h2s/reddit-console.git
     $ cd reddit-console
+    $ php composer.phar install
     $ ./bin/reddit-console subreddit:show programming
     How to determine if my calculation of pi is accurate?
     Be careful with JS numbers
