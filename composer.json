@@ -1,0 +1,7 @@
+{
+  "require": {
+    "h2s/reddit-api-client": "dev-master",
+    "symfony/console": "2.1.*@dev"
+  }
+}
+
