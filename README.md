@@ -1,6 +1,8 @@
 Reddit Console
 ==============
 
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/h2s/reddit-console/badges/quality-score.png?s=fdaaf9d9c21b01c5cd88da941e2621518c6c05b0)](https://scrutinizer-ci.com/g/h2s/reddit-console/)
+
 This is an example application intended to illustrate the installation and usage
 of the [PHP Reddit API client](https://github.com/h2s/reddit-api-client). Even
 so, here's how to use the application itself:
