@@ -23,7 +23,7 @@
 
   "require": {
     "php": ">=5.3.0",
-    "h2s/reddit-api-client": "dev-master",
+    "h2s/reddit-api-client": "dev-reddit",
     "symfony/console": "2.1.*@dev"
   }
 }

@@ -2,7 +2,7 @@
 
 namespace RedditConsole\Command;
 
-use RedditApiClient\Reddit;
+use Reddit\Api\Client;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -24,10 +24,17 @@ class SubredditShow extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $reddit = new Reddit;
-        $links  = $reddit->getLinksBySubreddit($input->getArgument('subreddit'));
+        $clientFactory = new Client\Factory;
+        $client = $clientFactory->createClient();
+        $getLinks = $client->getCommand(
+            'GetLinksBySubreddit',
+            [
+                'subreddit' => 'programming',
+            ]
+        );
+        $links = $getLinks->execute();
         foreach ($links as $link) {
-            $output->writeln($link->getTitle());
+            $output->writeln($link->title);
         }
     }
 }
